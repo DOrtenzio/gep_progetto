@@ -91,3 +91,10 @@ Tutti i libri presenti nel catalogo devono rispettare i diritti d’autore e le 
 *  Prezzo fisso mensile con disdetta libera
 *  Integrazione DRM per protezione dei file
 *  Conformità agli standard di accessibilità (WCAG)
+
+---
+
+#### **Use Case UML**
+
+[![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_UML-blue)](http://yuml.me/dortenzio/4c889ddb.svg)
+![4c889ddb](https://github.com/user-attachments/assets/62671e87-71dd-4abf-a3dd-01b703ebaea3)
