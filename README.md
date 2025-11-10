@@ -3,10 +3,10 @@
 **Autore:** Diego D'Ortenzio
 
 **Descrizione:**
-Una libreria digitale in abbonamento, a basso costo, che offre accesso illimitato a migliaia di libri sempre aggiornati.
-Un'esperienza personalizzata, **senza pubblicità né limiti**, disponibile su tutti i dispositivi connessi a Internet.
+Una piattaforma digitale dove i lettori possono **acquistare insieme i libri**, dividendo la spesa in modo semplice e trasparente. Ogni utente può poi **leggere il libro a turno**, lasciando recensioni non solo sull’opera, ma anche sugli altri lettori con cui ha condiviso l’acquisto.
+Un modo innovativo, collaborativo e sostenibile di accedere alla lettura: **meno costi, più condivisione, più scoperta**.
 
-> ✨ *Nuovi titoli ogni mese, come su Netflix... ma per chi ama leggere.*
+> ✨ *Niente abbonamenti, niente vincoli: solo libri, persone e storie che si incontrano.*
 
 ---
 
@@ -29,72 +29,106 @@ Lettori appassionati che vogliono leggere **ovunque**, senza pesi e a un prezzo 
 * Kobo Plus
 * Kindle Unlimited
 * Bookelot
+* Anobii
+
+| 🧩 **Caratteristica** | ⭐ **Importanza** | 📚 **LibrFlex (P.)** | 📘 **Kobo Plus** | 📗 **Kindle Unlimited** | 📙 **Bookelot** | 💬 **Anobii** |
+|------------------------|------------------|----------------------|------------------|--------------------------|----------------|---------------|
+| **Acquisto condiviso** | 🔥 High | 🟢 **Disponibile**<br/>Gruppi di conoscenti o sconosciuti con recensioni tra co-lettori | 🔴 Non disponibile | 🔴 Non disponibile | 🔴 Non disponibile | 🔴 Solo catalogazione (nessun accesso diretto) |
+| **Accesso illimitato a migliaia di libri** | 🔥 High | 🟢 Tutti i libri acquistati in gruppo, lettura a turno | 🟢 Ampio catalogo selezionato | 🟠 Solo parte del catalogo incluso | 🔴 Pochi libri a catalogo | 🔴 Solo catalogazione |
+| **Prezzo basso e accessibile** | 🔥 High | 🟢 Costo condiviso (molto ridotto) | 🟢 €9.99/mese | 🟠 €13.99/mese | 🔴 Prezzo variabile e crescente | 🟢 Gratis (funzionalità social) |
+| **Aggiornamento mensile del catalogo** | 🔥 High | 🟢 Nuovi titoli mensili (classici + novità) | 🟢 Aggiornato frequentemente | 🟢 Aggiornamenti regolari | 🔴 Catalogo statico | 🟠 Dipende dagli utenti |
+| **Suggerimenti in base ai propri gusti** | 🔥 High | 🟢 Basati su recensioni e interazioni | 🔴 Limitato | 🟠 Non sempre accurato | 🔴 Assente | 🟢 Social e partecipativo |
+| **Nessuna pubblicità** | 🔥 High | 🟢 Nessuna pubblicità | 🟢 Nessuna | 🟢 Nessuna | 🟢 Nessuna | 🟢 Nessuna |
+| **Disponibilità multipiattaforma**<br/>(web, mobile, tablet, e-reader) | 🔥 High | 🟢 Tutti i dispositivi | 🟢 Ottimizzato per eReader Kobo | 🟢 App mobile e Kindle | 🔴 Limitato | 🟢 Web e mobile |
+| **Possibilità di download offline** | 🟡 Moderate | 🟢 Lettura temporanea protetta | 🟢 Disponibile | 🟢 Disponibile | 🔴 Non previsto | 🔴 Non prevista |
+| **Collaborazioni con editori indipendenti o minori** | 🟢 Low | 🟢 Ampio spazio agli indipendenti | 🔴 Pochi | 🔴 Limitati | 🔴 Assenti | 🟢 Supporta piccoli editori |
+| **Funzionalità social**<br/>(recensioni, interazioni tra utenti) | 🔥 High | 🟢 Recensioni su libri e co-acquirenti | 🟠 Limitate | 🟠 Solo recensioni libri | 🔴 Nessuna | 🟢 Core del servizio (social reading) |
+
 
 ---
 
 ## **Tagline**
 
-> “Scopri un nuovo modo di leggere: accesso illimitato a migliaia di titoli, ovunque e in qualsiasi momento.”
+> “Una storia letta da molti, vissuta da ciascuno. Ridefinisci il modo di leggere, Insieme.”
 
 ---
 
 ## **Tecnologie**
 
-*(Da definire — non ancora inserite)*
+* **Frontend:** Next.js (React) + Tailwind CSS → interfaccia moderna, veloce e responsiva
+* **Backend:** Node.js con NestJS o Express → API REST e logica applicativa
+* **Database:** PostgreSQL (principale) + Redis (cache e sessioni)
+* **Autenticazione:** OAuth 2.0 / JWT con Auth0 o Firebase Auth
+* **Pagamenti:** Stripe (Stripe Connect per gestione quote e split payment)
+* **Storage e distribuzione:** Amazon S3 + Cloudflare CDN
+* **Antipirataggio:** DRM (Adobe / Google Widevine) + watermark dinamico + accesso via streaming protetto
+* **Hosting e cloud:** AWS o Google Cloud (scalabilità e affidabilità)
+* **Sicurezza:** HTTPS, crittografia AES, bcrypt per password, 2FA opzionale
+* **Monitoraggio e analytics:** Sentry (errori) + Google Analytics o Mixpanel (uso e engagement)
+* **CI/CD e versioning:** GitHub + GitHub Actions per deployment automatici
 
 ---
 
 ## **Analisi dei Requisiti**
 
-### **Descrizione Generale**
+### **Descrizione dei requisiti**
 
-La libreria digitale in abbonamento è un servizio online che consente agli utenti di accedere, tramite una piattaforma web o un’app dedicata, a un vasto catalogo di libri digitali sempre aggiornati.
-Gli utenti possono registrarsi al sistema, creare il proprio profilo personale, accedere con credenziali riservate e recuperare la password in caso di smarrimento (funzionale). Il servizio prevede la gestione completa dell’abbonamento, con possibilità di attivazione, rinnovo e cancellazione in qualsiasi momento, oltre alla memorizzazione e alla modifica dei metodi di pagamento (funzionale). All’interno della piattaforma, l’utente può cercare e filtrare i libri in base al titolo, all’autore, al genere o alla popolarità (funzionale), e accedere a un lettore digitale integrato che consente la lettura dei testi (funzionale). Ogni mese nuovi titoli vengono aggiunti al catalogo in modo automatico da parte dell’amministratore (funzionale), e ogni lettore ha la possibilità di lasciare recensioni e valutazioni sui libri letti (funzionale).I progressi di lettura sono sincronizzati in tempo reale su tutti i dispositivi collegati allo stesso account (funzionale).
-L’interfaccia deve essere semplice, chiara e intuitiva, adatta anche a utenti con scarsa esperienza tecnologica (non funzionale), e il sistema deve garantire tempi di caricamento rapidi, con l’apertura dei libri in tempi ragionevoli (non funzionale). Il servizio deve mantenere un’elevata disponibilità, o uptime (non funzionale). La piattaforma deve essere accessibile da qualsiasi dispositivo — computer, smartphone, tablet o smart TV — (non funzionale), e deve poter gestire un numero crescente di utenti e titoli senza compromettere le prestazioni (non funzionale). Il codice deve essere modulare per agevolare manutenzione e aggiornamenti (non funzionale), e l’esperienza dell’utente deve essere completamente priva di pubblicità (non funzionale).
-Tutti i libri presenti nel catalogo devono rispettare i diritti d’autore e le licenze digitali previste dagli accordi editoriali (di dominio). La piattaforma deve mantenere rapporti costanti con editori e autori per garantire l’inserimento di nuovi titoli ogni mese (di dominio). Il modello economico prevede un prezzo fisso mensile, senza pubblicità e con possibilità di disdetta libera in ogni momento (di dominio).
- Per tutelare i contenuti, il sistema deve integrare tecnologie DRM (Digital Rights Management) che impediscano la copia o la distribuzione non autorizzata dei file (di dominio), e deve rispettare gli standard internazionali di accessibilità (WCAG) (di dominio).
+La piattaforma di lettura condivisa è un servizio online che consente agli utenti di **acquistare insieme libri digitali**, suddividendo il costo tra più partecipanti, conosciuti o sconosciuti, in modo semplice e trasparente.
+L’accesso avviene tramite una **piattaforma web** o **app dedicata**, dove gli utenti possono creare un profilo personale, gestire la propria libreria condivisa e partecipare a gruppi di lettura (funzionale).
 
----
+Gli utenti possono **registrarsi**, effettuare il **login sicuro** e recuperare la password in caso di smarrimento (funzionale). Ogni utente può **avviare o unirsi a un gruppo di acquisto**, visualizzando la quota di partecipazione e le regole di lettura a turno (funzionale).
+Una volta completato l’acquisto condiviso, il libro viene reso disponibile in modalità **a lettura sequenziale o competitiva**, con **sistema di coda** gestito automaticamente dalla piattaforma (funzionale).
 
-### **Elenco Riassuntivo dei Requisiti**
+Il servizio consente inoltre di **lasciare recensioni e valutazioni** non solo sui libri, ma anche sui **co-acquirenti**, favorendo un sistema di reputazione tra lettori (funzionale).
+Gli utenti possono **ricercare libri** per titolo, autore, genere o popolarità, **filtrare per disponibilità o prezzo condiviso**, e accedere a un **lettore digitale integrato** per la lettura sicura dei testi (funzionale).
 
-#### **Funzionali**
+I contenuti vengono aggiornati regolarmente grazie agli **accordi con editori e autori**, con l’aggiunta di nuovi titoli al catalogo ogni mese (funzionale). I progressi di lettura sono **sincronizzati** su tutti i dispositivi collegati allo stesso account (funzionale).
 
-*  Registrazione e login utente
-*  Gestione profilo e recupero password
-*  Attivazione, rinnovo e cancellazione abbonamento
-*  Gestione metodi di pagamento
-*  Ricerca e filtro dei libri per titolo, autore, genere o popolarità
-*  Accesso al lettore digitale integrato
-*  Inserimento automatico di nuovi titoli
-*  Recensioni e valutazioni utenti
-*  Sincronizzazione progressi su più dispositivi
+L’interfaccia deve essere **semplice, chiara e intuitiva**, adatta anche a utenti con scarsa esperienza tecnologica (non funzionale). Il sistema deve garantire **tempi di caricamento rapidi**, **alta disponibilità** e **compatibilità multipiattaforma** (non funzionale).
+La piattaforma deve essere **scalabile**, per gestire un numero crescente di utenti, gruppi e libri senza compromettere le prestazioni (non funzionale), e il codice deve essere **modulare e manutenibile** per favorire aggiornamenti futuri (non funzionale). L’esperienza utente deve essere **completamente priva di pubblicità** (non funzionale).
+
+Tutti i libri devono rispettare i **diritti d’autore** e le **licenze editoriali** previste dagli accordi (di dominio).
+Il modello economico si basa sull’**acquisto condiviso dei libri**, senza abbonamenti, con pagamento sicuro e ripartizione automatica della spesa (di dominio).
+Per proteggere i contenuti, il sistema integra **tecnologie DRM** e **watermark dinamici**, impedendo la copia o distribuzione non autorizzata (di dominio), nel rispetto degli **standard di accessibilità (WCAG)** e delle **normative internazionali sulla privacy** (di dominio).
 
 ---
 
-#### **Non Funzionali**
+### **Elenco Riassuntivo Requisiti**
 
-*  Interfaccia semplice e intuitiva
-*  Caricamento rapido
-*  Alta disponibilità (uptime elevato)
-*  Compatibilità multi-piattaforma (PC, smartphone, tablet, smart TV)
-*  Scalabilità per gestire molti utenti e libri
-*  Codice modulare e facilmente manutenibile
-*  Esperienza utente senza pubblicità
+#### Funzionali
 
----
+* Registrazione, login e recupero password
+* Creazione e gestione del profilo utente
+* Avvio o partecipazione a gruppi di acquisto condiviso
+* Gestione delle quote di pagamento
+* Lettura a turno o competitiva tramite lettore digitale integrato
+* Ricerca e filtro libri per titolo, autore, genere, prezzo o popolarità
+* Inserimento automatico di nuovi titoli nel catalogo
+* Recensioni e valutazioni su libri e co-acquirenti
+* Sincronizzazione progressi di lettura su più dispositivi
 
-#### **Di Dominio**
+#### Non Funzionali
 
-*  Rispetto dei diritti d’autore e licenze digitali
-*  Accordi con editori e autori per nuovi titoli mensili
-*  Prezzo fisso mensile con disdetta libera
-*  Integrazione DRM per protezione dei file
-*  Conformità agli standard di accessibilità (WCAG)
+* Interfaccia chiara, accessibile e intuitiva
+* Caricamento rapido e tempi di risposta ridotti
+* Alta disponibilità e affidabilità del servizio
+* Compatibilità multi-piattaforma (web, mobile, tablet, e-reader)
+* Scalabilità per gestire un numero crescente di utenti e libri
+* Codice modulare e facilmente manutenibile
+* Esperienza d’uso priva di pubblicità
+
+#### Di Dominio
+
+* Rispetto di diritti d’autore e licenze digitali
+* Accordi continuativi con editori e autori per aggiornare il catalogo
+* Modello economico basato sull’acquisto condiviso (no abbonamento)
+* Integrazione di DRM e watermarking per protezione antipirateria
+* Conformità agli standard WCAG e alle normative sulla privacy (GDPR)
 
 ---
 
 #### **Use Case UML**
 
-[![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_UML-blue)](http://yuml.me/dortenzio/4c889ddb.svg)
-![4c889ddb](https://github.com/user-attachments/assets/62671e87-71dd-4abf-a3dd-01b703ebaea3)
+[![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_UML-blue)](https://yuml.me/dortenzio/es1.svg)
+<img width="1250" height="886" alt="image" src="https://github.com/user-attachments/assets/5f3ec75f-8dee-43f3-9fc8-3e98e2075ed7" />
+
