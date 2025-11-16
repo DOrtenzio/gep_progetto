@@ -130,5 +130,6 @@ Per proteggere i contenuti, il sistema integra **tecnologie DRM** e **watermark 
 #### **Use Case UML**
 
 [![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_UML-blue)](https://yuml.me/dortenzio/es1.svg)
-<img width="1250" height="886" alt="image" src="https://github.com/user-attachments/assets/5f3ec75f-8dee-43f3-9fc8-3e98e2075ed7" />
+<img width="962" height="828" alt="image" src="https://github.com/user-attachments/assets/d8769c35-e8c8-4be3-afb8-98eb14cf4eda" />
+
 
