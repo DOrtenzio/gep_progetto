@@ -123,8 +123,7 @@ La protezione dei contenuti è garantita tramite **DRM**, **watermark dinamici**
 | Utente           | Crea Gruppo → Gruppo Privato  | Creare un gruppo ad accesso riservato o su invito               |
 | Utente           | Partecipa Gruppo              | Entrare in gruppi di acquisto per condividere costi e lettura   |
 | Utente           | Partecipazione Quota          | Visualizzare la quota da pagare per il libro condiviso          |
-| Utente           | Checkout Pagamenti            | Completare il pagamento della quota in modo sicuro              |
-| Utente → Sistema Bancario | Autorizzazione Pagamenti      | Validare e autorizzare le transazioni economiche                |
+| Utente → Sistema Bancario           | Checkout Pagamenti            | Completare il pagamento della quota in modo sicuro              |
 | Utente           | Recensire Libro               | Esprimere giudizi e valutazioni sui libri letti                 |
 | Utente           | Recensire Gruppo              | Valutare l’esperienza di partecipazione ai gruppi               |
 | Amministratore   | Login Privilegi               | Accedere alle funzioni amministrative protette                  |
