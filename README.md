@@ -160,6 +160,6 @@ La protezione dei contenuti è garantita tramite **DRM**, **watermark dinamici**
 
 ## **Prototipo Basato Sui Requisiti**
 
-[![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_Prototipo-blue)](https://yuml.me/dortenzio/es1.svg)
+[![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_Prototipo-blue)](https://librflex.lovable.app/)
 
 
