@@ -69,43 +69,68 @@ Lettori appassionati che vogliono leggere **ovunque**, senza pesi e a un prezzo 
 
 ---
 
-## **Analisi dei Requisiti**
+# **Analisi dei Requisiti**
 
-### **Descrizione dei requisiti**
+## **Descrizione dei requisiti**
 
-La piattaforma di lettura condivisa è un servizio online che consente agli utenti di **acquistare insieme libri digitali**, suddividendo il costo tra più partecipanti, conosciuti o sconosciuti, in modo semplice e trasparente.
-L’accesso avviene tramite una **piattaforma web** o **app dedicata**, dove gli utenti possono creare un profilo personale, gestire la propria libreria condivisa e partecipare a gruppi di lettura (funzionale).
+La piattaforma di lettura condivisa è un servizio online che consente agli utenti di **registrarsi**, accedere tramite **login sicuro** e recuperare la password in caso di smarrimento. Ogni utente autenticato può gestire il proprio **profilo personale** e utilizzare le funzionalità principali del sistema (funzionale).
 
-Gli utenti possono **registrarsi**, effettuare il **login sicuro** e recuperare la password in caso di smarrimento (funzionale). Ogni utente può **avviare o unirsi a un gruppo di acquisto**, visualizzando la quota di partecipazione e le regole di lettura a turno (funzionale).
-Una volta completato l’acquisto condiviso, il libro viene reso disponibile in modalità **a lettura sequenziale o competitiva**, con **sistema di coda** gestito automaticamente dalla piattaforma (funzionale).
+Gli utenti possono **cercare libri**, consultarne i dettagli, leggere tramite il **lettore digitale integrato** e avere la **sincronizzazione automatica delle letture** su tutti i dispositivi (funzionale). La sincronizzazione viene attivata automaticamente durante l’attività di lettura.
+La piattaforma permette inoltre di **creare gruppi di acquisto condiviso**, scegliendo tra **gruppi pubblici** (aperti a tutti) o **gruppi privati** (accesso su invito o approvazione). Ogni utente può anche **partecipare ai gruppi** creati da altri, visualizzando le condizioni e la **quota di partecipazione** (funzionale).
 
-Il servizio consente inoltre di **lasciare recensioni e valutazioni** non solo sui libri, ma anche sui **co-acquirenti**, favorendo un sistema di reputazione tra lettori (funzionale).
-Gli utenti possono **ricercare libri** per titolo, autore, genere o popolarità, **filtrare per disponibilità o prezzo condiviso**, e accedere a un **lettore digitale integrato** per la lettura sicura dei testi (funzionale).
+Una volta definita la quota, il sistema attiva la procedura di **checkout dei pagamenti**, integrata con il **Sistema Bancario**, responsabile dell’autorizzazione e validazione delle transazioni (funzionale). Solo dopo il pagamento avvenuto correttamente il libro digitale viene reso disponibile ai partecipanti.
 
-I contenuti vengono aggiornati regolarmente grazie agli **accordi con editori e autori**, con l’aggiunta di nuovi titoli al catalogo ogni mese (funzionale). I progressi di lettura sono **sincronizzati** su tutti i dispositivi collegati allo stesso account (funzionale).
+Gli utenti possono inoltre **recensire i libri** letti e **recensire i gruppi** ai quali hanno partecipato, contribuendo al sistema di reputazione interno (funzionale).
 
-L’interfaccia deve essere **semplice, chiara e intuitiva**, adatta anche a utenti con scarsa esperienza tecnologica (non funzionale). Il sistema deve garantire **tempi di caricamento rapidi**, **alta disponibilità** e **compatibilità multipiattaforma** (non funzionale).
-La piattaforma deve essere **scalabile**, per gestire un numero crescente di utenti, gruppi e libri senza compromettere le prestazioni (non funzionale), e il codice deve essere **modulare e manutenibile** per favorire aggiornamenti futuri (non funzionale). L’esperienza utente deve essere **completamente priva di pubblicità** (non funzionale).
+Gli amministratori accedono tramite un **login con privilegi elevati**, che consente loro la **gestione del catalogo**, comprendente l’aggiunta, aggiornamento o rimozione dei libri. Ogni operazione sul catalogo richiede la **verifica dei diritti editoriali** e delle licenze tramite l’attore esterno **Editore** (funzionale).
 
-Tutti i libri devono rispettare i **diritti d’autore** e le **licenze editoriali** previste dagli accordi (di dominio).
-Il modello economico si basa sull’**acquisto condiviso dei libri**, senza abbonamenti, con pagamento sicuro e ripartizione automatica della spesa (di dominio).
-Per proteggere i contenuti, il sistema integra **tecnologie DRM** e **watermark dinamici**, impedendo la copia o distribuzione non autorizzata (di dominio), nel rispetto degli **standard di accessibilità (WCAG)** e delle **normative internazionali sulla privacy** (di dominio).
+L’interfaccia deve essere **semplice e intuitiva**, pensata per utenti di qualsiasi livello di competenza tecnologica (non funzionale). La piattaforma deve garantire **tempi di risposta rapidi**, disponibilità continua e **compatibilità multipiattaforma** (non funzionale).
+Il sistema deve essere **scalabile**, strutturato in modo modulare e facilmente manutenibile (non funzionale), senza contenuti pubblicitari (non funzionale).
+Tutti i libri sono soggetti al rispetto dei **diritti d’autore** e delle licenze editoriali formalizzate con gli editori (di dominio). Il modello economico si basa sull’**acquisto condiviso**, con ripartizione automatica dei costi e **pagamenti sicuri** tramite integrazione bancaria (di dominio).
+La protezione dei contenuti è garantita tramite **DRM**, **watermark dinamici**, e il pieno rispetto delle norme sulla privacy e degli standard di accessibilità (WCAG) (di dominio).
 
 ---
 
-### **Elenco Riassuntivo Requisiti**
+## **Elenco Riassuntivo Requisiti**
 
-#### Funzionali
+### **Funzionali**
 
 * Registrazione, login e recupero password
-* Creazione e gestione del profilo utente
-* Avvio o partecipazione a gruppi di acquisto condiviso
-* Gestione delle quote di pagamento
-* Lettura a turno o competitiva tramite lettore digitale integrato
-* Ricerca e filtro libri per titolo, autore, genere, prezzo o popolarità
-* Inserimento automatico di nuovi titoli nel catalogo
-* Recensioni e valutazioni su libri e co-acquirenti
-* Sincronizzazione progressi di lettura su più dispositivi
+* Gestione del profilo utente
+* Ricerca dei libri nel catalogo
+* Lettura tramite lettore digitale e sincronizzazione dei progressi
+* Creazione di gruppi di acquisto (pubblici o privati)
+* Partecipazione ai gruppi di acquisto
+* Gestione delle quote di partecipazione
+* Checkout dei pagamenti con integrazione al sistema bancario
+* Recensioni su libri e gruppi
+* Accesso sicuro per le funzionalità d'amministrazione
+* Gestione del catalogo da parte dell’amministratore
+* Verifica dei diritti editoriali tramite editore esterno
+
+
+| **Attore**       | **Requisito Funzionale**      | **Fine del Requisito**                                          |
+| ---------------- | ----------------------------- | --------------------------------------------------------------- |
+| Utente           | Registrazione                 | Creare un nuovo account e accedere ai servizi della piattaforma |
+| Utente           | Login                         | Accedere al proprio profilo e alle funzionalità riservate       |
+| Utente           | Recupero Password             | Ripristinare l’accesso in caso di smarrimento credenziali       |
+| Utente           | Gestione Profilo              | Aggiornare i propri dati personali e configurazioni             |
+| Utente           | Ricerca Libro                 | Trovare rapidamente libri nel catalogo tramite filtri e criteri |
+| Utente           | Lettura Libro                 | Leggere il contenuto digitale tramite lettore integrato         |
+| Utente           | Sincronizzazione Letture      | Mantenere allineati i progressi di lettura su più dispositivi   |
+| Utente           | Crea Gruppo                   | Avviare un nuovo gruppo di acquisto condiviso                   |
+| Utente           | Crea Gruppo → Gruppo Pubblico | Creare un gruppo aperto alla partecipazione di tutti            |
+| Utente           | Crea Gruppo → Gruppo Privato  | Creare un gruppo ad accesso riservato o su invito               |
+| Utente           | Partecipa Gruppo              | Entrare in gruppi di acquisto per condividere costi e lettura   |
+| Utente           | Partecipazione Quota          | Visualizzare la quota da pagare per il libro condiviso          |
+| Utente           | Checkout Pagamenti            | Completare il pagamento della quota in modo sicuro              |
+| Utente → Sistema Bancario | Autorizzazione Pagamenti      | Validare e autorizzare le transazioni economiche                |
+| Utente           | Recensire Libro               | Esprimere giudizi e valutazioni sui libri letti                 |
+| Utente           | Recensire Gruppo              | Valutare l’esperienza di partecipazione ai gruppi               |
+| Amministratore   | Login Privilegi               | Accedere alle funzioni amministrative protette                  |
+| Amministratore   | Gestione Catalogo             | Aggiornare, aggiungere o rimuovere libri dal catalogo           |
+| Amministratore → Editore          | Verifica Diritti              | Confermare licenze e diritti editoriali sui contenuti           |
+
 
 #### Non Funzionali
 
@@ -127,9 +152,15 @@ Per proteggere i contenuti, il sistema integra **tecnologie DRM** e **watermark 
 
 ---
 
-#### **Use Case UML**
+## **Use Case UML**
 
 [![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_UML-blue)](https://yuml.me/dortenzio/es1.svg)
-<img width="962" height="828" alt="image" src="https://github.com/user-attachments/assets/d8769c35-e8c8-4be3-afb8-98eb14cf4eda" />
+<img width="990" height="912" alt="image" src="https://github.com/user-attachments/assets/39e7918c-bea1-42ff-824d-61a6e7186666" />
+
+---
+
+## **Prototipo Basato Sui Requisiti**
+
+[![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_Prototipo-blue)](https://yuml.me/dortenzio/es1.svg)
 
 
