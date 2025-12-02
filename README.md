@@ -108,27 +108,28 @@ La protezione dei contenuti è garantita tramite **DRM**, **watermark dinamici**
 * Gestione del catalogo da parte dell’amministratore
 * Verifica dei diritti editoriali tramite editore esterno
 
+#### **User Story**
 
-| **Attore**       | **Requisito Funzionale**      | **Fine del Requisito**                                          |
-| ---------------- | ----------------------------- | --------------------------------------------------------------- |
-| Utente           | Registrazione                 | Creare un nuovo account e accedere ai servizi della piattaforma |
-| Utente           | Login                         | Accedere al proprio profilo e alle funzionalità riservate       |
-| Utente           | Recupero Password             | Ripristinare l’accesso in caso di smarrimento credenziali       |
-| Utente           | Gestione Profilo              | Aggiornare i propri dati personali e configurazioni             |
-| Utente           | Ricerca Libro                 | Trovare rapidamente libri nel catalogo tramite filtri e criteri |
-| Utente           | Lettura Libro                 | Leggere il contenuto digitale tramite lettore integrato         |
-| Utente           | Sincronizzazione Letture      | Mantenere allineati i progressi di lettura su più dispositivi   |
-| Utente           | Crea Gruppo                   | Avviare un nuovo gruppo di acquisto condiviso                   |
-| Utente           | Crea Gruppo → Gruppo Pubblico | Creare un gruppo aperto alla partecipazione di tutti            |
-| Utente           | Crea Gruppo → Gruppo Privato  | Creare un gruppo ad accesso riservato o su invito               |
-| Utente           | Partecipa Gruppo              | Entrare in gruppi di acquisto per condividere costi e lettura   |
-| Utente           | Partecipazione Quota          | Visualizzare la quota da pagare per il libro condiviso          |
-| Utente → Sistema Bancario           | Checkout Pagamenti            | Completare il pagamento della quota in modo sicuro              |
-| Utente           | Recensire Libro               | Esprimere giudizi e valutazioni sui libri letti                 |
-| Utente           | Recensire Gruppo              | Valutare l’esperienza di partecipazione ai gruppi               |
-| Amministratore   | Login Privilegi               | Accedere alle funzioni amministrative protette                  |
-| Amministratore   | Gestione Catalogo             | Aggiornare, aggiungere o rimuovere libri dal catalogo           |
-| Amministratore → Editore          | Verifica Diritti              | Confermare licenze e diritti editoriali sui contenuti           |
+| **Attore (Come...)**      | **Requisito / Azione (Voglio...)**         | **Beneficio (In modo da...)**                         |
+| ------------------------- | ------------------------------------------ | ----------------------------------------------------- |
+| Utente                    | registrarmi alla piattaforma               | creare un account e accedere ai servizi               |
+| Utente                    | effettuare il login                        | accedere al mio profilo e alle funzionalità riservate |
+| Utente                    | recuperare la password                     | ripristinare l’accesso in caso di smarrimento         |
+| Utente                    | gestire il mio profilo                     | aggiornare i dati personali e le configurazioni       |
+| Utente                    | cercare un libro nel catalogo              | trovarlo rapidamente tramite filtri e criteri         |
+| Utente                    | leggere un libro tramite lettore integrato | accedere comodamente ai contenuti digitali            |
+| Utente                    | sincronizzare i miei progressi di lettura  | mantenerli aggiornati su tutti i dispositivi          |
+| Utente                    | creare un gruppo di acquisto               | condividere l’acquisto e la lettura con altri utenti  |
+| Utente                    | creare un gruppo pubblico                  | permettere a chiunque di partecipare                  |
+| Utente                    | creare un gruppo privato                   | limitare l’accesso agli utenti invitati               |
+| Utente                    | partecipare a un gruppo di acquisto        | condividere costi e lettura con altri utenti          |
+| Utente                    | visualizzare la quota da pagare            | sapere il costo della mia partecipazione              |
+| Utente → Sistema Bancario | effettuare il checkout del pagamento       | completare la transazione in modo sicuro              |
+| Utente                    | recensire un libro                         | condividere giudizi e valutazioni                     |
+| Utente                    | recensire un gruppo                        | valutare l’esperienza di partecipazione               |
+| Amministratore            | effettuare il login con privilegi          | accedere alle funzioni amministrative                 |
+| Amministratore            | gestire il catalogo dei libri              | aggiungere, modificare o rimuovere contenuti          |
+| Amministratore → Editore  | verificare i diritti dei contenuti         | confermare licenze e autorizzazioni editoriali        |
 
 
 #### Non Funzionali
