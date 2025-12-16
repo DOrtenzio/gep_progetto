@@ -24,8 +24,6 @@ Lettori appassionati che vogliono leggere **ovunque**, senza pesi e a un prezzo 
 
 ## **Competitors**
 
-*(vedi tabella “Competitors” per dettagli)*
-
 * Kobo Plus
 * Kindle Unlimited
 * Bookelot
