@@ -161,4 +161,68 @@ La protezione dei contenuti è garantita tramite **DRM**, **watermark dinamici**
 
 [![Static Badge]( https://img.shields.io/badge/Clicca_Qui-Per_Prototipo-blue)](https://librflex.lovable.app/)
 
+<img width="1896" height="896" alt="image" src="https://github.com/user-attachments/assets/4c2b0edf-8e47-4085-84aa-8ff198451e05" />
 
+---
+
+## Elevator Pitch e Business Model
+
+### **Slide Mentali**
+
+#### **Slide 1: The Opening Slide**
+
+* Nome Compagnia: librFlex  
+* Progetto: Editoria Digitale e Economia della Condivisione.  
+* Contatto: Diego D'Ortenzio – dortenzio.diego.studente@itispaleocapa.it  
+* Slogan: "Una storia letta da molti, vissuta da ciascuno."
+
+#### **Slide 2: The Problem** 
+
+Oggi leggere costa troppo. Il prezzo dei libri, sia fisici che digitali, è in costante aumento, limitando l'accesso alla cultura. Molti lettori vorrebbero leggere di più, ma sono frenati dal costo del singolo volume o dai vincoli dei modelli ad abbonamento che spesso non includono le ultime novità.
+
+#### **Slide 3: The Solution** 
+
+librFlex è la prima piattaforma di Social Reading & Group Buying. Permettiamo agli utenti di acquistare libri digitali in gruppo, dividendo il costo. Non è un abbonamento: è un acquisto condiviso dove il libro viene letto a turno dai partecipanti, rendendo la cultura accessibile, legale e sociale.
+
+#### **Slide 4: Market Size** 
+
+Il mercato dell'e-publishing è in crescita costante, con milioni di lettori che si spostano verso il digitale. Solo in Italia, il mercato dei libri vale oltre 1.7 miliardi di euro. librFlex si inserisce nell'intersezione tra l'e-commerce editoriale e la sharing economy, un settore che cresce del 20% ogni anno.
+
+#### **Slide 5: Business Model** 
+
+Operiamo come un Marketplace. Collaboriamo con le case editrici offrendo i loro titoli sul nostro catalogo. Il nostro ricavo deriva da una commissione fissa applicata a ogni acquisto di gruppo. In questo modo, l'editore vende di più, il lettore spende meno e noi scaliamo con ogni gruppo creato.
+
+#### **Slide 6: Proprietary Technology** 
+
+* Architettura Scalabile: Frontend in Next.js e Backend in Node.js per alte prestazioni.  
+* Sicurezza e Legalità: Integrazione DRM e Watermarking dinamico per proteggere il copyright degli editori.  
+* Split Payment: Integrazione con Stripe Connect per la divisione automatica dei pagamenti tra gli utenti.
+
+#### **Slide 7: Competition** 
+
+I nostri competitor sono colossi come Kindle Unlimited e Kobo Plus, o social network come Anobii. Tuttavia, nessuno di loro offre la proprietà condivisa del libro o l'abbattimento del prezzo d'acquisto tramite gruppi sociali.
+
+#### **Slide 8: Why is librFlex better?**
+
+A differenza degli abbonamenti 'all-you-can-read' che spesso offrono cataloghi limitati o titoli datati, librFlex permette di accedere alle novità editoriali a una frazione del prezzo. Inoltre, il nostro sistema di recensioni tra co-acquirenti trasforma la lettura da attività solitaria in un'esperienza di community.
+
+#### **Slide 9: Customer Acquisition** 
+
+* Social & Community: Partnership con BookToker e Bookstagrammer.  
+* Referral: Meccanismi di 'invita un amico' per completare i gruppi di acquisto più velocemente.
+
+#### **Slide 10: Founding Team**
+
+* Diego D'Ortenzio: Founder & Project Lead.
+
+#### **Slide 11: Money, Milestones** 
+
+Il nostro obiettivo per il primo anno è raggiungere i primi 10.000 utenti attivi e stringere accordi con almeno 50 case editrici indipendenti. Prevediamo l’eguagliamento delle spese entro il secondo anno di attività grazie alla bassa spesa di gestione dell'infrastruttura digitale.
+
+### **L'Elevator Pitch** 
+
+<img width="1847" height="854" alt="image" src="https://github.com/user-attachments/assets/05a2469a-21d2-44b3-a12a-61ef23ffd97f" />
+
+   
+
+Ciao, sono Diego D'Ortenzio, fondatore di librFlex. Sapete che il costo elevato dei libri è la prima barriera che allontana i giovani dalla lettura? Abbiamo creato librFlex per abbattere questa barriera. Siamo un marketplace che permette alle persone di acquistare libri insieme, dividendo la spesa e leggendo a turno in modo legale e protetto. A differenza dei classici abbonamenti, con noi paghi solo quello che leggi, risparmiando fino al 70% sul prezzo di copertina. Abbiamo già definito la tecnologia DRM per proteggere gli autori e siamo pronti a trasformare la lettura da un lusso solitario a un'esperienza condivisa. Abbiamo già progettato l'infrastruttura tecnologica con protezione DRM e pagamenti integrati. Oggi cerchiamo un investimento iniziale di 50.000€ per finalizzare gli accordi con le case editrici e lanciare la versione beta sul mercato. Siete pronti a riscrivere insieme a noi il futuro dell'editoria?
