@@ -189,7 +189,8 @@ Accesso diretto alla versione interattiva della piattaforma:
 [![Live Demo](https://img.shields.io/badge/Prototype-Live-00C7B7?style=for-the-badge&logo=vercel)](https://librflex.lovable.app/)
 
 
-<img width="1896" height="896" alt="image" src="https://github.com/user-attachments/assets/4c2b0edf-8e47-4085-84aa-8ff198451e05" />
+<img width="1892" height="815" alt="image" src="https://github.com/user-attachments/assets/372a1144-d719-44d2-9e4f-187a08e5e709" />
+
 
 ---
 
@@ -251,7 +252,8 @@ Il nostro obiettivo per il primo anno è raggiungere i primi 10.000 utenti attiv
 
 ### **L'Elevator Pitch** 
 
-<img width="1847" height="854" alt="image" src="https://github.com/user-attachments/assets/05a2469a-21d2-44b3-a12a-61ef23ffd97f" />
+<img width="1900" height="818" alt="image" src="https://github.com/user-attachments/assets/e57d90d8-7c98-48cc-9961-e709fe2fdf90" />
+
 
 Ciao, sono Diego D'Ortenzio, fondatore di librFlex. Sapete che il costo elevato dei libri è la prima barriera che allontana i giovani dalla lettura? Abbiamo creato librFlex per abbattere questa barriera. Siamo un marketplace che permette alle persone di acquistare libri insieme, dividendo la spesa e leggendo a turno in modo legale e protetto. A differenza dei classici abbonamenti, con noi paghi solo quello che leggi, risparmiando fino al 70% sul prezzo di copertina. Abbiamo già definito la tecnologia DRM per proteggere gli autori e siamo pronti a trasformare la lettura da un lusso solitario a un'esperienza condivisa. Abbiamo già progettato l'infrastruttura tecnologica con protezione DRM e pagamenti integrati. Oggi cerchiamo un investimento iniziale di 50.000€ per finalizzare gli accordi con le case editrici e lanciare la versione beta sul mercato. Siete pronti a riscrivere insieme a noi il futuro dell'editoria?
 
