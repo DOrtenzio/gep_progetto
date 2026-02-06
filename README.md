@@ -93,7 +93,7 @@ Per supportare un'architettura così complessa, è stato selezionato uno stack t
 La piattaforma di lettura condivisa è un servizio online che consente agli utenti di **registrarsi**, accedere tramite **login sicuro** e recuperare la password in caso di smarrimento. Ogni utente autenticato può gestire il proprio **profilo personale** e utilizzare le funzionalità principali del sistema (funzionale).
 
 Gli utenti possono **cercare libri**, consultarne i dettagli, leggere tramite il **lettore digitale integrato** e avere la **sincronizzazione automatica delle letture** su tutti i dispositivi (funzionale). La sincronizzazione viene attivata automaticamente durante l’attività di lettura.
-La piattaforma permette inoltre di **creare gruppi di acquisto condiviso**, scegliendo tra **gruppi pubblici** (aperti a tutti) o **gruppi privati** (accesso su invito o approvazione). Ogni utente può anche **partecipare ai gruppi** creati da altri, visualizzando le condizioni e la **quota di partecipazione** (funzionale).
+La piattaforma permette inoltre di **creare gruppi di acquisto condiviso**, scegliendo tra **gruppi pubblici** (aperti a tutti) o **gruppi privati** (accesso su invito o approvazione). Ogni utente può anche **partecipare ai gruppi** creati da altri, visualizzando le condizioni e la **quota di partecipazione** (funzionale), ed **interagendo in essi**.
 
 Una volta definita la quota, il sistema attiva la procedura di **checkout dei pagamenti**, integrata con il **Sistema Bancario**, responsabile dell’autorizzazione e validazione delle transazioni (funzionale). Solo dopo il pagamento avvenuto correttamente il libro digitale viene reso disponibile ai partecipanti.
 
@@ -118,6 +118,7 @@ La protezione dei contenuti è garantita tramite **DRM**, **watermark dinamici**
 * Lettura tramite lettore digitale e sincronizzazione dei progressi
 * Creazione di gruppi di acquisto (pubblici o privati)
 * Partecipazione ai gruppi di acquisto
+* Comunicazione tra i membri di un gruppo tramite chat interna
 * Gestione delle quote di partecipazione
 * Checkout dei pagamenti con integrazione al sistema bancario
 * Recensioni su libri e gruppi
@@ -146,6 +147,8 @@ In questa sezione vengono dettagliate le necessità degli utenti attraverso il f
 | Utente → Sistema Bancario | effettuare il checkout del pagamento        | completare la transazione in modo sicuro              |
 | Utente                    | recensire un libro                          | condividere giudizi e valutazioni                      |
 | Utente                    | recensire un gruppo                        | valutare l’esperienza di partecipazione                |
+| Utente | chattare con i membri del gruppo | coordinare l’acquisto e la lettura    |
+| Utente | inviare messaggi nel gruppo      | discutere del libro e dell’esperienza |
 | Amministratore            | effettuare il login con privilegi          | accedere alle funzioni amministrative                  |
 | Amministratore            | gestire il catalogo dei libri              | aggiungere, modificare o rimuovere contenuti          |
 | Amministratore → Editore  | verificare i diritti dei contenuti          | confermare licenze e autorizzazioni editoriali        |
@@ -177,7 +180,7 @@ Rappresentazione grafica delle interazioni tra gli attori e il sistema:
 [![Use Case UML](https://img.shields.io/badge/Diagram-UML-5865F2?style=for-the-badge&logo=uml)](https://yuml.me/dortenzio/es1.svg)
 
 
-<img width="990" height="912" alt="image" src="https://github.com/user-attachments/assets/39e7918c-bea1-42ff-824d-61a6e7186666" />
+<img width="990" height="912" alt="image" src="https://yuml.me/dortenzio/es1.svg" />
 
 ---
 
