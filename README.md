@@ -9,7 +9,7 @@
 3. **[Specifiche Tecniche](#tecnologie)**
 4. **[Analisi dei Requisiti](#analisi-dei-requisiti)** (Dettagli, Elenco e User Stories)
 5. **[Modellazione e Prototipazione](#use-case-uml)** (UML e Prototipo)
-6. **[Business Strategy](#elevator-pitch-e-business-model)** (Pitch, Business Model e WBS)
+6. **[Business Strategy](#elevator-pitch-e-business-model)** (Pitch, Business Model, WBS e Gantt)
 
 ---
 
@@ -267,28 +267,114 @@ Pianificazione dettagliata delle fasi di sviluppo e relativi costi:
 
 ```mermaid
 graph TD
-    A["librFlex<br/>(€28.5k - 4 Mesi)"] --> B["PM e Legale<br/>(€3.5k - 3 sett.)"]
-    A --> C["Infrastruttura e Security<br/>(€5.5k - 4 sett.)"]
-    A --> D["Backend e Database<br/>(€8.5k - 8 sett.)"]
-    A --> E["Frontend<br/>(€8.0k - 7 sett.)"]
-    A --> F["Testing e Lancio<br/>(€3.0k - 3 sett.)"]
+    A["librFlex<br/>(4 mesi – €28.5k)"]
 
-    B --> B1["Accordi Editori<br/>(€1.5k - 2 sett.)"]
-    B --> B2["Architettura & Privacy<br/>(€2k - 1 sett.)"]
+    %% 1. PM & LEGALE
+    A --> B["1. PM & Legale<br/>(€3.5k – 3 sett.)"]
 
-    C --> C1["Impostazione Cloud<br/>(€2k - 1 sett.)"]
-    C --> C2["DRM & Watermarking<br/>(€2k - 2 sett.)"]
-    C --> C3["Autenticazione<br/>(€1.5k - 1 sett.)"]
+    B --> B1["1.1 Accordi Editoriali<br/>(€1.5k – 2 sett.)"]
+    B1 --> B1a["Analisi licenze"]
+    B1 --> B1b["Contratti editori"]
+    B1 --> B1c["Validazione diritti"]
 
-    D --> D1["Schema DB Postgres<br/>(€1.5k - 1 sett.)"]
-    D --> D2["API Gruppi & Turni<br/>(€3.5k - 4 sett.)"]
-    D --> D3["Checkout Stripe<br/>(€3.5k - 3 sett.)"]
+    B --> B2["1.2 Architettura<br/>(€2.0k – 1 sett.)"]
+    B2 --> B2a["GDPR & Privacy"]
+    B2 --> B2b["Architettura sistema"]
 
-    E --> E1["UI/UX Design<br/>(€1.5k - 2 sett.)"]
-    E --> E2["Portale Next.js<br/>(€3.5k - 3 sett.)"]
-    E --> E3["Reader Digitale Integrato<br/>(€3k - 2 sett.)"]
+    %% 2. INFRASTRUTTURA & SECURITY
+    A --> C["2. Infrastruttura & Security<br/>(€5.5k – 4 sett.)"]
 
-    F --> F1["Bug Fix<br/>(€2.2k - 2 sett.)"]
-    F --> F2["Analitiche e Lancio<br/>(€0.8k - 1 sett.)"]
+    C --> C1["2.1 Cloud & Hosting<br/>(€2.0k – 1 sett.)"]
+    C1 --> C1a["Setup cloud"]
+    C1 --> C1b["Storage + CDN"]
+
+    C --> C2["2.2 DRM & Watermarking<br/>(€2.0k – 2 sett.)"]
+    C2 --> C2a["DRM"]
+    C2 --> C2b["Watermark dinamico"]
+
+    C --> C3["2.3 Autenticazione<br/>(€1.5k – 1 sett.)"]
+    C3 --> C3a["OAuth / JWT"]
+    C3 --> C3b["Ruoli e permessi"]
+
+    %% 3. BACKEND
+    A --> D["3. Backend & Database<br/>(€8.5k – 8 sett.)"]
+
+    D --> D1["3.1 Database<br/>(€1.5k – 1 sett.)"]
+    D1 --> D1a["Schema PostgreSQL"]
+    D1 --> D1b["Relazioni"]
+
+    D --> D2["3.2 Logica del Business<br/>(€3.5k – 4 sett.)"]
+    D2 --> D2a["Utenti e profili"]
+    D2 --> D2b["Gruppi di acquisto"]
+    D2 --> D2c["Turnazione lettura"]
+    D2 --> D2d["Chat & recensioni"]
+
+    D --> D3["3.3 Pagamenti<br/>(€3.5k – 3 sett.)"]
+    D3 --> D3a["Stripe Checkout"]
+    D3 --> D3b["Split payment"]
+
+    %% 4. FRONTEND
+    A --> E["4. Frontend & UX<br/>(€8.0k – 7 sett.)"]
+
+    E --> E1["4.1 UI/UX Design<br/>(€1.5k – 2 sett.)"]
+    E1 --> E1a["Wireframe"]
+    E1 --> E1b["Design responsive"]
+
+    E --> E2["4.2 Web App Next.js<br/>(€3.5k – 3 sett.)"]
+    E2 --> E2a["Dashboard"]
+    E2 --> E2b["Gestione gruppi"]
+
+    E --> E3["4.3 Reader Digitale<br/>(€3.0k – 2 sett.)"]
+    E3 --> E3a["Reader protetto"]
+    E3 --> E3b["Sync progressi"]
+
+    %% 5. TESTING & LANCIO
+    A --> F["5. Testing & Lancio<br/>(€3.0k – 3 sett.)"]
+
+    F --> F1["5.1 Testing & Bug Fix<br/>(€2.2k – 2 sett.)"]
+    F1 --> F1a["Test funzionali"]
+    F1 --> F1b["Bug fixing"]
+
+    F --> F2["5.2 Analytics & Beta<br/>(€0.8k – 1 sett.)"]
+    F2 --> F2a["Analytics"]
+    F2 --> F2b["Lancio beta"]
+```
+
+---
+
+### **Cronoprogramma**
+
+Pianificazione dettagliata dei tempi di sviluppo:
+
+```mermaid
+gantt
+    title librFlex – Cronoprogramma (4 mesi)
+    dateFormat  YYYY-MM-DD
+    axisFormat %d/%m
+
+    section 1. PM & Legale (€3.5k)
+    Accordi editoriali                    :a1, 2026-01-08, 14d
+    GDPR e architettura                   :a2, after a1, 7d
+
+    section 2. Infrastruttura & Security (€5.5k)
+    Setup cloud e CDN                     :b1, 2026-01-15, 7d
+    Autenticazione e ruoli                :b2, after b1, 7d
+    DRM e watermarking                    :b3, after b2, 14d
+
+    section 3. Backend & Database (€8.5k)
+    Schema DB                             :c1, 2026-01-22, 7d
+    API utenti e profili                  :c2, after c1, 7d
+    Gruppi, turnazione, chat              :c3, after c2, 28d
+    Pagamenti Stripe + split              :crit, c4, after c2, 21d
+
+    section 4. Frontend & UX (€8.0k)
+    UI/UX design                          :d1, 2026-01-22, 14d
+    Web App Next.js                       :d2, after d1, 21d
+    Reader digitale                       :d3, after d2, 14d
+
+    section 5. Testing & Lancio (€3.0k)
+    Test e bug fixing                     :e1, 2026-03-20, 14d
+    Analytics e lancio beta               :e2, after e1, 7d
+    Lancio beta                           :milestone, 2026-04-10, 0d
 
 ```
