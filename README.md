@@ -182,6 +182,8 @@ Rappresentazione grafica delle interazioni tra gli attori e il sistema:
 
 <img width="990" height="912" alt="image" src="https://yuml.me/dortenzio/es1.svg" />
 
+> NB: Il sito che hosta l'immagine attualmente non funziona
+
 ---
 
 ## **Prototipo Basato Sui Requisiti**
@@ -253,6 +255,8 @@ Il nostro obiettivo per il primo anno è raggiungere i primi 10.000 utenti attiv
 ---
 
 ### **L'Elevator Pitch** 
+
+[![Presentation](https://img.shields.io/badge/Presentation-Slides-FF6F00?style=for-the-badge&logo=microsoftpowerpoint&logoColor=white)](https://tiny.cc/librFlex)
 
 <img width="1900" height="818" alt="image" src="https://github.com/user-attachments/assets/e57d90d8-7c98-48cc-9961-e709fe2fdf90" />
 
